@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #23395B;
+    text-align: center;
+    box-sizing: border-box;
+}
+main{
+    height: 60%;
+    background-color: #8EA8C3;
+    text-align: center;
+}
+div{
+    display: inline;
+    float: left;
+}
+.left{
+    width: 10%;
+}
+.mid{
+    width: 80%;
+}
+.right{
+    width: 10%;
+}
+footer{
+    height: 20%;
+    background-color: #406E8E;
+    text-align: center;
+}
