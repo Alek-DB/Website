@@ -55,6 +55,7 @@ main{
     width:25%;
     margin: auto;
     border-radius: 3vh;
+    min-width: 150px;
 }
 
 .searchbar button{
