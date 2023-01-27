@@ -1,35 +1,85 @@
 body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
 header{
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 50px;
     background-color: #23395B;
     text-align: center;
     box-sizing: border-box;
 }
+
+
+/*-----------------------------main----------------------------------*/
 main{
-    height: 60%;
-    background-color: #8EA8C3;
+    box-sizing: border-box;
+    background-color: #c2dfff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mid p{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.container{
+    margin-top: 15px;
+    padding: 10px 0px;
+}
+.titre{
+    font-weight: bold;
+    font-size: large;
+}
+.prix{
+    font-weight: normal;
+    color: #0e1f38;
+}
+.dimension{
+    font-size: 14px;
+}
+.description{
+    font-size: 15px;
+}
+
+
+.top{
+    width: 60%;
+    max-width: 800px;
+}
+
+.container{
     text-align: center;
 }
-div{
-    display: inline;
-    float: left;
-}
-.left{
-    width: 10%;
-}
-.mid{
-    width: 80%;
-}
-.right{
-    width: 10%;
-}
-footer{
-    height: 20%;
-    background-color: #406E8E;
+/*----------------------------footer---------------------------------*/
+.footer{
+    box-sizing: border-box;
     text-align: center;
+    padding: 35px;
+    margin: 0;
+    width: 100%;
+    font-size: small;
+    color: rgb(41, 41, 41);
+    background-color: rgb(167, 167, 167);
+}
+
+button{
+    border: none;
+    background-color: inherit;
+    cursor:pointer;
+    padding-left: 10px;
+}
+
+.footer p{
+    margin: 0;
+    padding: 15px;
+    position: relative;
+    top: 40px;
 }
