@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #c2dfff;
+}
+html body{
+    overflow-x: hidden;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.marchand{
+    width: 70%;
+    height: auto;
+}
+
+/*
+.vidcontainer{
+    width: 100%;
+    max-height: 200px;
+}
+
+    background-size: cover;
+    overflow: hidden;
+    min-width: 20%;
+    max-width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+
+video{
+    min-width: 20%;
+    max-width: 40%;
+}
+*/
+
+/*-----------------------------main----------------------------------*/
+main{
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.searchbar{
+    background-color: black;
+    width:25%;
+    margin: auto;
+    border-radius: 3vh;
+}
+
+.searchbar button{
+    background-color: inherit;
+    margin: 15px 35px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.searchbar button:hover{
+    color:gray ;
+}
+
+.mid h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.mid h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.container{
+    margin-top: 15px;
+    padding: 40px 0px;
+}
+.titre{
+    font-weight: bold;
+    font-size: large;
+}
+.prix{
+    font-weight: normal;
+    color: #0e1f38;
+}
+.dimension{
+    font-size: 14px;
+}
+.description{
+    font-size: 15px;
+}
+
+
+.top{
+    width: 60%;
+    max-width: 800px;
+}
+
+.container{
+    text-align: center;
+}
+/*----------------------------footer---------------------------------*/
+.footer{
+    border-top: 2px solid gray;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 35px;
+    width: 100%;
+    font-size: small;
+    color: rgb(41, 41, 41);
+    background-color: rgb(167, 167, 167);
+}
+.footerbutton{
+    background-color: rgb(167, 167, 167);
+}
+.footerbutton button{
+    background-color: rgb(167, 167, 167);
+    border: none;
+    cursor:pointer;
+    padding: 0px 10px;
+}
+
+.footerbutton button:hover{
+   color: rgb(54, 54, 54);
+}
+
+.footer p{
+    padding-bottom: 20px;
+    position: relative;
+    top: 40px;
+    background-color: inherit;
+}
+
+.footerapp img{
+    width: 15px;
+    height: 15px;
+    padding: 30px 32px 0px;
+    background-color: inherit;
+}
+
+.footerapp{
+    background-color: inherit;
+}
+.footerapp a{
+    background-color: inherit;
+}
+
+
+/*extra*/
+
+.soldout{
+    color: rgb(65, 1, 1);
+    font-weight: bold;
+    font-size: large;
+}
+
+.imgsoldout{
+    width: 60%;
+    max-width: 800px;
+    border: 2px solid rgb(65, 1, 1);
+}
+
+.normal{
+    width: 60%;
+    max-width: 800px;
+}
