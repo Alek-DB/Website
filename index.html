@@ -9,12 +9,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="marchandise.css">
         <meta charset="UTF-8">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#header").load("header.html"); 
+            });
+        </script>
     </head>
     <body>
+        <div id="header">
+            
         </div>
-        <header>
-           <img src="./media/marchandise.png" title="Marchandise" class="marchand">
-        </header>
         <main>
              <div class="mid">
                     <div class="searchbar">
@@ -32,7 +41,7 @@
                 <h2>Par  Marchandise</h2>
                     <div class="container">
                         <div class="image">
-                            <img class="top" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/DemainJarrete.png">
+                            <a href=""><img class="top" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/DemainJarrete.png"></a>
                         </div>
                         <div class="titre">Demain j'arrête</div>
                         <div class="prix">C$ 1,200.00</div>
@@ -42,7 +51,7 @@
 
                     <div class="container">
                         <div class="image">
-                            <img class="normal" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/DemainJarrete.png">
+                            <a href=""> <img class="normal" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/DemainJarrete.png"></a>
                         </div>
                         <div class="titre">Demain j'arrête</div>
                         <div class="prix">C$ <s>1,200.00</s><br>C$ 999.00</div>
@@ -52,7 +61,7 @@
 
                     <div class="container">
                         <div class="image">
-                            <img class="imgsoldout" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/DemainJarrete.png">
+                            <a href=""> <img class="imgsoldout" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/DemainJarrete.png"></a>
                         </div>
                         <div class="titre">Demain j'arrête</div>
                         <div class="prix">C$ <s>1,200.00</s>
