@@ -65,7 +65,7 @@ main{
 .searchbar button{
     background-color: inherit;
     width: 30%;
-    margin: 15px auto;
+    margin: 10px auto;
     border: none;
     color: white;
     font-size: 20px;
@@ -145,8 +145,7 @@ main{
 }
 
 .footerapp{
-    border: 2px solid blue;
-    width: 50%;
+    width: 100%;
     margin: auto;
     background-color: inherit;
 }
@@ -193,6 +192,9 @@ main{
     display: inline;
 }
 
+.block{
+    white-space: nowrap;
+}
 
 /*-------------------extra--------------------*/
 
