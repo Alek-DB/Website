@@ -96,27 +96,29 @@ main{
 .titre{
     font-weight: bold;
     font-size: large;
+    padding-bottom: 5px;
 }
 .prix{
     font-weight: normal;
     color: #0e1f38;
+    padding-bottom: 5px;
 }
 .dimension{
     font-size: 14px;
+    padding-bottom: 5px;
 }
 .description{
     font-size: 15px;
 }
-
-
 .top{
     width: 60%;
     max-width: 800px;
 }
-
 .container{
     text-align: center;
 }
+
+
 /*----------------------------footer---------------------------------*/
 .footer{
     border-top: 2px solid gray;
@@ -136,22 +138,37 @@ main{
     background-color: rgb(167, 167, 167);
     border: none;
     cursor:pointer;
-    padding: 0px 10px;
+    padding: 0px 10px 10px;
 }
-
 .footerbutton button:hover{
    color: rgb(54, 54, 54);
 }
 
+.footerapp{
+    border: 2px solid blue;
+    width: 50%;
+    margin: auto;
+    background-color: inherit;
+}
 .footer p{
     display: inline;
 }
 .footer a{
+    width: 100px;
     text-decoration: none;
     color: black;
 }
-
-
+.footerapp div{
+    box-sizing: border-box;
+    padding: 0px 10px;
+    display: inline;
+}
+.insta{
+    position: relative;
+    top: 3px;
+    padding:0;
+    margin: 15px 0px 0px 4px;
+}
 .copyright{
     padding-bottom: 20px;
     position: relative;
@@ -159,10 +176,6 @@ main{
     background-color: inherit;
 }
 
-.insta{
-    padding:0;
-    margin: 20px 50px 0px 10px;
-}
 
 .footer img{
     padding-top: 10px;
@@ -172,9 +185,6 @@ main{
 }
 
 
-.footerapp{
-    background-color: inherit;
-}
 .footerapp a{
     background-color: inherit;
 }
@@ -184,7 +194,7 @@ main{
 }
 
 
-/*extra*/
+/*-------------------extra--------------------*/
 
 .soldout{
     color: rgb(65, 1, 1);
