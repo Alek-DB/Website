@@ -43,8 +43,8 @@ main{
 }
 
 .text{
-    background-color: #161616;
-    color: #adadad;
+    background-color: rgb(32, 32, 32);
+    color:rgb(236, 236, 236);
     padding: 10px;
     border-radius: 15px;
     text-decoration: none;
@@ -53,9 +53,9 @@ main{
     text-align: left;
     color: #242424;
     width: 400px;
-    position: fixed;
+    position: absolute;
     left: 20px;
-    top: 120px;
+    top: 340px;
 }
 
 #hideaway{
