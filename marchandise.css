@@ -34,6 +34,40 @@ main{
     box-sizing: border-box;
 }
 
+.minus{
+    color: black;
+    margin: 30px;
+    text-decoration: none;
+
+}
+
+.text{
+    background-color: #161616;
+    color: #adadad;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.hide{
+    text-align: left;
+    color: #242424;
+    width: 400px;
+    position: fixed;
+    left: 20px;
+}
+
+#hideaway{
+    margin-top: 15px;
+    background-color:#889db3;
+    border: 2px solid black;
+}
+.note, .note2{
+    font-size: 14px;
+    color: #3d3d3d;
+    font-style: italic;
+}
+
+
 /*----------------------------SEARCHBAR-------------------------------*/
 .searchbar{
     background-color: rgb(32, 32, 32);
@@ -82,8 +116,18 @@ main{
 .container a{
     cursor: pointer;
 }
-.container img{
+.TLC{
+    width: 60%;
     border: 3px solid black;
+}
+.DJ{
+    width: 50%;
+    border: 3px solid black;
+}
+#top{
+    border: 3px solid black;
+    width: 30%;
+    max-width: 800px;
 }
 .titre{
     font-weight: bold;
@@ -102,11 +146,6 @@ main{
 .description{
     font-size: 15px;
 }
-.top{
-    width: 60%;
-    max-width: 800px;
-}
-
 .container{
     text-align: center;
 }
@@ -196,10 +235,6 @@ main{
     border: 2px solid rgb(65, 1, 1);
 }
 
-.normal{
-    width: 60%;
-    max-width: 800px;
-}
 
 /*--------------------------MEDIA--------------------------*/
 
