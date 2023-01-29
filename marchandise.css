@@ -267,6 +267,17 @@ main{
     left: 5px;
     margin-top: 92px;
 }
+
+.TLC{
+    width: 80%;
+}
+.DJ{
+    width: 70%;
+}
+#top{
+    width: 50%;
+    max-width: 800px;
+}
 }
 
 /*--------------ANIMATION, TRANSITIONS AND HOVER----------------*/
