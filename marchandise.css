@@ -34,6 +34,7 @@ main{
     box-sizing: border-box;
 }
 
+/*-------------------IMPORTANT----------------------------*/
 .minus{
     color: black;
     margin: 30px;
@@ -54,6 +55,7 @@ main{
     width: 400px;
     position: fixed;
     left: 20px;
+    top: 120px;
 }
 
 #hideaway{

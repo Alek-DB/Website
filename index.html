@@ -9,20 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="marchandise.css">
         <meta charset="UTF-8">
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-        </script>
-        <script> 
-            $(function(){
-            $("#header").load("header.html"); 
-            $("#footer").load("footer.html"); 
-            });
-        </script>
     </head>
     <body>
-        <div id="header">
+            <header>
+                <img src="./media/marchandise.png" title="Marchandise" class="marchand">
+             </header>
+
             <div class="hide">
 
                 <a class="text" href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';">Important!</a>
@@ -39,9 +31,7 @@
                         </div>
                         <br>
                     </div>
-
             </div>
-        </div>
         <main>
              <div class="mid">
 
@@ -60,43 +50,6 @@
                 <h1>Toiles</h1>
                 <h2>Par  Marchandise</h2>
 
-                <!--  NORMAL
-                    <div class="container">
-                        <div class="image">
-                            <a href=""><img id="top" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/1.DemainJarrete.png"></a>
-                        </div>
-                        <div class="titre">Demain j'arrête</div>
-                        <div class="prix">C$ 1,200.00</div>
-                        <div class="dimension">101cm x 76cm</div>
-                        <div class="description">Acrylic marker on canvas</div>
-                    </div>
-                -->
-
-                <!-- SOLD OUT
-                    <div class="container">
-                        <div class="image">
-                            <a href=""> <img id="top" class="imgsoldout" title="Le snake" alt="Your browser does not support this image" src="./media/3.Le Snake.png"></a>
-                        </div>
-                        <div class="titre">Le snake</div>
-                        <div class="prix">C$ <s>180.00</s>
-                         <br><p class="soldout">Sold out</p></div>
-                        <div class="dimension">30cm x 22cm</div>
-                        <div class="description">Acrylic marker on canvas</div>
-                    </div>
-                -->
-
-                <!-- DISCOUNT
-
-                    <div class="container">
-                        <div class="image">
-                            <a href=""> <img id="top" title="Demain j'arrête" alt="Your browser does not support this image" src="./media/1.DemainJarrete.png"></a>
-                        </div>
-                        <div class="titre">Demain j'arrête</div>
-                        <div class="prix">C$ <s>1,200.00</s><br>C$ 999.00</div>
-                        <div class="dimension">101cm x 76cm</div>
-                        <div class="description">Acrylic marker on canvas</div>
-                    </div>
-                -->
 
                     <div class="container">
                         <div class="image">
@@ -334,11 +287,45 @@
                         <div class="description">Acrylic marker on canvas</div>
                     </div>
 
-
+                    
                 </div>
         </main>
-        <div id="footer">
-            
+        <div class="footer">
+            <div class="footerbutton">
+                <button class="home">Home</button> <button class="canvas">Canvas</button> <button class="studio">Studio</button>
+            </div>
+            <div class="footerapp">
+                <section>
+                    <a href="mailto:alekdelbalso@gmail.com"><img title="Email" src="./media/mail.svg" class="email"></a>
+                    <br>
+                <section>
+                    <a href="https://www.instagram.com/marchandise.tt/?hl=en" target="_blank">
+                        <div class="block"><p>Marchandise</p><img class="insta" title="Instagram" src="./media/insta.svg">
+                        </div>
+                    </a>
+                </section>
+                <div></div>
+                <section>
+                    <a href="https://www.instagram.com/ekes203/?hl=en" target="_blank">
+                        <div class="block"><p>Ekes</p><img class="insta" title="Instagram" src="./media/insta.svg">
+                        </div>
+                    </a>
+                </section>
+                <div></div>
+                <section>
+                    <a href="https://www.instagram.com/iamateau/?hl=en" target="_blank">
+                        <div class="block"><p>Yamato</p><img class="insta" title="Instagram" src="./media/insta.svg">
+                        </div>
+                    </a>
+                </section>
+                <div></div>
+                <section>
+                    <a href="https://www.instagram.com/marcfaitdestrucs/?next=%2F" target="_blank">
+                        <div class="block"><p>Marcfaitdestrucs</p><img class="insta" title="Instagram" src="./media/insta.svg">
+                        </a>
+                    </section>
+            </div>
+            <p class="copyright">&copy;Delprog</p>
         </div>
     </body>
 </html>
