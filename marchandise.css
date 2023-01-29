@@ -55,7 +55,7 @@ main{
     width: 400px;
     position: absolute;
     left: 20px;
-    top: 340px;
+    margin-top: 10px;
 }
 
 #hideaway{
@@ -265,6 +265,7 @@ main{
 .hide{
     width: 300px;
     left: 5px;
+    margin-top: 92px;
 }
 }
 
