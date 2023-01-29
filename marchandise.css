@@ -259,6 +259,11 @@ main{
     width: 100%;
     height: auto;
 }
+.hide{
+    width: 300px;
+    position: fixed;
+    left: 5px;
+}
 }
 
 /*--------------ANIMATION, TRANSITIONS AND HOVER----------------*/
