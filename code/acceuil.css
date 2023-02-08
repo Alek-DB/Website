@@ -92,9 +92,10 @@ body{
     bottom: 40px;
     width: 85%;
     left: 7.5%;
-    height: 0px;
+    height: 0;
+    transform-origin: bottom;
     border-radius: 8px;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out 0.8s;
 }
 .Logomarchand{
     background-image: url(../media/marchandise.logo.png);
@@ -107,6 +108,25 @@ body{
 }
 .Logoekes{
     background-image: url(../media/ekes.logo.png);
+}
+
+.Drop{
+    background-color: white;
+    z-index: -1;
+    position: absolute;
+    top: 20px;
+    width: 85%;
+    left: 7.5%;
+    height: 0;
+    border-radius: 8px;
+    transition: height 0.5s ease-in-out 0.8s; 
+}
+.Drop a{
+    opacity: 0;
+    display: block;
+    text-align: center;
+    margin: 30px;
+    transition: opacity 0.3s ease-in-out 0.4s ;
 }
 
 
@@ -123,17 +143,12 @@ body{
         width: 100%;
         min-width: fit-content;
     }
-    .container:hover .Logomarchand{
+    .container:hover .Logomarchand, .container:hover .Logoyamato, .container:hover .Logomarc, .container:hover .Logoekes, .container:hover .Drop {
         height: 170px;
+        transition:height .5s ease-out 0s; 
     }
-    .container:hover .Logoyamato{
-        height: 170px;
-    }
-    .container:hover .Logomarc{
-        height: 170px;
-    }
-    .container:hover .Logoekes{
-        height: 170px;
+    .container:hover .Drop a{
+        opacity: 1;
     }
 }
 
