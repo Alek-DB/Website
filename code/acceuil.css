@@ -14,27 +14,62 @@ body{
     background-position: center;
 }
 
+.titre-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height:30vh
+}
+.title{
+    margin: 30px;
+    max-width: 100%;
+    display: block;
+}
+.search{
+    display: inline;
+    position: absolute;
+    top: 6px;
+    right: 20px;
+}
+.search a{
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    margin: 15px;
+    color: rgba(255, 255, 255, 0.274);
+    transition: all 0.2s ease-in-out;
+}
+.search a:hover{
+    color: azure;
+}
+
+.limit{
+    display: flex;
+    align-items: center;
+    height:70vh;
+}
 .Button{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: inherit;
     flex-direction: column;
 }
-
-.title{
-    max-width: 90%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 100px;
+.container{
+    display: flex;
+    justify-content: center;
+    min-width: fit-content;
+    position: relative;
+    width: 30%;
+    margin: 0 20px;
+    text-align: center;
+    animation: link-load 0.6s ease-out;
 }
-
 .link{
     margin: 20px 0;
     display: block;
-    width: 100%;
-    min-width: fit-content;
+    width: fit-content;
     padding: 12px;
     text-decoration: none;
     font-weight: bold;
@@ -42,23 +77,23 @@ body{
     border: 2px solid rgb(243, 243, 243);
     color: rgb(243, 243, 243);
     background-color: rgb(3, 3, 3);
-    transition: all linear 0.1s;
+    transition: all linear 0.2s;
 }
-
 .link:hover{
     background-color: rgb(243, 243, 243);
     border: 2px solid rgb(243, 243, 243);
     color: black;
 }
-
 .Logomarchand, .Logoekes, .Logomarc, .Logoyamato{
+    z-index: -1;
     background-size: cover;
     background-position: center;
     position: absolute;
-    left: 7.5%;
-    bottom: 66px;
+    bottom: 40px;
     width: 85%;
+    left: 7.5%;
     height: 0px;
+    border-radius: 8px;
     transition: height 0.5s ease-in-out;
 }
 .Logomarchand{
@@ -66,8 +101,6 @@ body{
 }
 .Logoyamato{
     background-image: url(../media/yamato.logo.png);
-    width: 80%;
-    left: 10%;
 }
 .Logomarc{
     background-image: url(../media/marc.logo.png);
@@ -77,36 +110,30 @@ body{
 }
 
 
-.container{
-    min-width: fit-content;
-    position: relative;
-    width: 30%;
-    margin: 0 20px;
-    text-align: center;
-    animation: link-load 0.6s ease-out;
-
-}
-
-
 @media screen and (min-width: 1000px) {
     .Button{
         flex-direction: row;
     }
     .container{
         margin: 10px;
-        width: 11%;
+        width: 200px;
+    }
+    .link{
+        margin: 0px 0;
+        width: 100%;
+        min-width: fit-content;
     }
     .container:hover .Logomarchand{
-        height: 150%;
+        height: 170px;
     }
     .container:hover .Logoyamato{
-        height: 150%;
+        height: 170px;
     }
     .container:hover .Logomarc{
-        height: 180%;
+        height: 170px;
     }
     .container:hover .Logoekes{
-        height: 150%;
+        height: 170px;
     }
 }
 
