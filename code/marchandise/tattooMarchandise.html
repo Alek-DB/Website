@@ -13,6 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <a id="top"></a>
+        <a href="#top" class="to_top"><img src="../../media/top.png" alt="Top" class="top"></a>
             <header>
                 <img src="../../media/marchandise.png" title="Marchandise" class="marchand">
              </header>
@@ -23,7 +25,7 @@
                         <button><a href="../../index.html">ACCEUIL</a></button>
                     </div>
                     <div class="btncontainer">
-                        <button><a href="">TOILE</a></button>
+                        <button><a href="toilesMarchandise.html">TOILE</a></button>
                     </div>
                     <div class="btncontainer">
                         <button><a href="tattooMarchandise.html">TATTOO</a></button>
@@ -33,10 +35,48 @@
                     </div>  
                 </div>
 
-                <h1>Toiles</h1>
+                <h1>Tattoo</h1>
                 <h2>Par  Marchandise</h2>
 
-                <h1>Nothing Here For Now</h1>
+                <div class="tattoo">
+                    <div class="container notreveal">
+                        <img src="../../media/dbz.JPG">
+                    </div>
+                    <div class="container notreveal">
+                        <img src="../../media/doom_pinguin.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/garfield.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/tete_mort_langue.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/shenron.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/racoon.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/mfDoom.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/lutin_acab.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/goku.JPG">
+                    </div>
+                    <div class="container reveal">
+                        <img src="../../media/canard.JPG">
+                    </div>
+
+                </div>
+
+
+
+
+
+
              </div>
         </main>
          <div class="footer">
@@ -77,5 +117,22 @@
                 </section>
             </div>
             <p class="copyright">&copy;ADB</p>
+            <script type="text/javascript">
+                window.addEventListener('scroll', reveal);
+                function reveal(){
+                    var reveals = document.querySelectorAll('.reveal');
+    
+                    for(var i = 0; i < reveals.length; i++){
+                        var windowheight = window.innerHeight;
+                        var revealtop = reveals[i].getBoundingClientRect().top;
+                        if(revealtop < windowheight){
+                            reveals[i].classList.add('active');
+                        }
+                        else{
+                            reveals[i].classList.remove('active');
+                        }
+                    }
+                }
+            </script>
     </body>
 </html>

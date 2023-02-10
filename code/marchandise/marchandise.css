@@ -11,9 +11,28 @@
 html body{
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--footer);
+}
+/*-------------------------------------------TOP-----------------------------------------------------*/
+.top{
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(142, 170, 255);
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.top:hover{
+    transform: scale(1.1);
 }
 /*-------------------------------------------------HEADER-------------------------------------------------*/
 header{
@@ -161,9 +180,11 @@ main{
     width: 30%;
     margin-top: 15px;
     padding: 40px 0px;
+    opacity: 0;
 }
 .gros{
     width: 45%;
+    opacity: 1;
 }
 .container a{
     cursor: pointer;
@@ -203,8 +224,14 @@ main{
 .description{
     font-size: 15px;
 }
-.container{
-    text-align: center;
+
+.active{
+    animation: fade_in 0.8s forwards;
+}
+@keyframes fade_in {
+    to{
+        opacity: 1;
+    }    
 }
 
 /*-------------------SPECIAL cONTAINER--------------------*/
