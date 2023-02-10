@@ -9,7 +9,7 @@
 body{
     margin: 0;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.801),rgba(0, 0, 0, 0.801)) ,url(../media/lazone.photo.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801),rgba(0, 0, 0, 0.801)) ,url(../media/studio.JPG);
     background-size: cover;
     background-position: center;
 }
@@ -18,7 +18,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    height:30vh
+    height:250px;
 }
 .title{
     margin: 30px;
@@ -46,7 +46,8 @@ body{
 .limit{
     display: flex;
     align-items: center;
-    height:70vh;
+    height:600px;
+    min-height: fit-content;
 }
 .Button{
     width: 100%;
@@ -64,7 +65,7 @@ body{
     width: 30%;
     margin: 0 20px;
     text-align: center;
-    animation: link-load 0.6s ease-out;
+    animation: link-load 0.6s ease-out forwards;
 }
 .link{
     margin: 20px 0;
@@ -95,7 +96,7 @@ body{
     height: 0;
     transform-origin: bottom;
     border-radius: 8px;
-    transition: height 0.5s ease-in-out 0.8s;
+    transition: height 0.5s ease-in-out;
 }
 .Logomarchand{
     background-image: url(../media/marchandise.logo.png);
@@ -110,24 +111,38 @@ body{
     background-image: url(../media/ekes.logo.png);
 }
 
+
 .Drop{
+    overflow: hidden;
     background-color: white;
     z-index: -1;
     position: absolute;
-    top: 20px;
+    top: 40px;
     width: 85%;
     left: 7.5%;
     height: 0;
     border-radius: 8px;
-    transition: height 0.5s ease-in-out 0.8s; 
+    transition: height 0.5s ease-in-out ; 
 }
 .Drop a{
+    width: 100%;
+    padding-top: 12.5%;
+    text-decoration: none;
+    color: black;
     opacity: 0;
     display: block;
     text-align: center;
-    margin: 30px;
-    transition: opacity 0.3s ease-in-out 0.4s ;
+    transition: opacity 150ms ease-in-out 0.1s;
 }
+.tattoo{
+    margin-top: 5px;
+}
+
+.dropcontainer{
+    display: flex;
+    height: 33%;
+}
+
 
 
 @media screen and (min-width: 1000px) {
@@ -139,14 +154,23 @@ body{
         width: 200px;
     }
     .link{
-        margin: 0px 0;
+        margin: 0;
         width: 100%;
         min-width: fit-content;
     }
-    .container:hover .Logomarchand, .container:hover .Logoyamato, .container:hover .Logomarc, .container:hover .Logoekes, .container:hover .Drop {
-        height: 170px;
-        transition:height .5s ease-out 0s; 
+
+    .container:hover .Logomarchand, 
+    .container:hover .Logoyamato, 
+    .container:hover .Logomarc, 
+    .container:hover .Logoekes, 
+    .container:hover .Drop,
+    .Drop:hover{
+        height: 190px; 
     }
+    .dropcontainer:hover{
+        background-color: rgba(0, 0, 0, 0.151);
+    }
+
     .container:hover .Drop a{
         opacity: 1;
     }
