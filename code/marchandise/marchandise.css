@@ -18,6 +18,12 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--footer);
 }
+
+
+
+
+
+
 /*-------------------------------------------TOP-----------------------------------------------------*/
 .top{
     z-index: 1;
@@ -34,6 +40,14 @@ body{
 .top:hover{
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
 /*-------------------------------------------------HEADER-------------------------------------------------*/
 header{
     background-color:var(--header);
@@ -48,6 +62,13 @@ header{
     height: auto;
 }
 
+
+
+
+
+
+
+
 /*-------------------------------------------------MAIN---------------------------------------*/
 main{
     padding-top: 40px;
@@ -57,6 +78,21 @@ main{
     width: 100%;
     box-sizing: border-box;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---------------------------------------------IMPORTANT-------------------------------------------*/
 .important{
@@ -99,15 +135,32 @@ main{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------SEARCHBAR----------------------------------------*/
 .searchbar{
     border: 2px solid black;
     background-color: var(--header);
-    width: 40%;
+    width: 30%;
     margin: auto;
     border-radius: 3vh;
     min-width: 150px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 .searchbar button:hover a{
     color:rgb(190, 190, 190) ;
@@ -117,7 +170,7 @@ main{
     display: inline-block;
     background-color: inherit;
     width: 20%;
-    margin: 10px auto;
+    margin: 1rem;
 }
 
 .btncontainer button a{
@@ -139,6 +192,20 @@ main{
     font-size: 20px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-----------------------------------------TITRE-------------------------------------------*/
 
@@ -167,6 +234,23 @@ main{
         opacity: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------------------------CONTAINER TOILES----------------------------------------------*/
@@ -234,7 +318,7 @@ main{
     }    
 }
 
-/*-------------------SPECIAL cONTAINER--------------------*/
+/*-------------------SPECIAL CONTAINER--------------------*/
 
 .soldout{
     color: rgb(65, 1, 1);
@@ -249,9 +333,25 @@ main{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------FOOTER---------------------------------*/
 
-/*---------------HOME CANVAS STUDIO----------------*/
+/*---------------HOME CANVAS----------------*/
 .footer{
     border-top: 2px solid  black;
     box-sizing: border-box;
@@ -262,13 +362,15 @@ main{
     color: rgb(206, 206, 206);
     background-color: var(--footer);
 }
-.footerbutton button{
+.footerbutton a{
+    font-weight: 450;
+    left: 7px;
     font-size: 16px;
     background-color: inherit;
     color: rgb(206, 206, 206);
     border: none;
     cursor:pointer;
-    margin: 0px 10px;
+    margin: 0px 12px;
     padding-bottom: 2px;
 }
 /*-------------EMAIL INSTA--------------------*/
@@ -310,7 +412,7 @@ main{
     background-color: inherit;
 }
 /*-----------------FOOTER BUTTON :HOVER-------------*/
-.footerbutton button:hover{
+.footerbutton a:hover{
     color: rgb(165, 165, 165);
  }
 
@@ -353,18 +455,39 @@ main{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------MEDIA----------------------------------------*/
+
+/*-------------SEARCHBAR--------------------------*/
 @media screen and (max-width: 1200px) {
     .searchbar{
         width: 60%;
     }
 }  
-@media screen and (max-width: 1000px) {   
+@media screen and (max-width: 1000px) { 
+    .searchbar{
+        flex-direction: column;
+        align-items: center;
+    }  
 .btncontainer button{
     text-align: center;
     display: block;
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .searchbar .btncontainer{
     display: block;
@@ -375,7 +498,7 @@ main{
     margin: auto;
     padding: 5px 0;
 }
-
+/*-------------------TOILE--------------------------*/
 .marchand{
     width: 100%;
     height: auto;
@@ -405,6 +528,7 @@ main{
 }
 }
 
+/*----------------------FOOTER--------------------------*/
 @media screen and (max-width: 600px) {  
     .footerapp div{
         display: block;

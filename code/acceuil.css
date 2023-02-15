@@ -6,6 +6,18 @@
 
 
 /*------------------PHOTO AND DARK--------------------*/
+.loading{
+    position: absolute;
+    background-color: black;
+    inset: 0;
+    z-index: 100;
+    animation: load 1s ease-out forwards 0.5s;
+}
+@keyframes load {
+    from{opacity: 1;}   
+    to{opacity: 0;
+    visibility: hidden;}   
+}
 body{
     margin: 0;
     min-height: 100vh;
@@ -25,6 +37,8 @@ body{
     max-width: 100%;
     display: block;
 }
+
+/*---------------Search-------------------*/
 .search{
     display: inline;
     position: absolute;
@@ -36,13 +50,14 @@ body{
     display: inline;
     text-decoration: none;
     margin: 15px;
-    color: rgba(255, 255, 255, 0.274);
+    color: rgba(255, 255, 255, 0.411);
     transition: all 0.2s ease-in-out;
 }
 .search a:hover{
     color: azure;
 }
 
+/*----------------Main----------------*/
 .limit{
     display: flex;
     align-items: center;
@@ -65,9 +80,11 @@ body{
     width: 30%;
     margin: 0 20px;
     text-align: center;
-    animation: link-load 0.6s ease-out forwards;
+    visibility: hidden;
+    animation: link-load 0.6s ease-out forwards 0.7s;
 }
 .link{
+    text-shadow: 0px 0px 3px white;
     margin: 20px 0;
     display: block;
     width: fit-content;
@@ -84,6 +101,7 @@ body{
     background-color: rgb(243, 243, 243);
     border: 2px solid rgb(243, 243, 243);
     color: black;
+    text-shadow: 0px 0px 1.5px black;
 }
 .Logomarchand, .Logoekes, .Logomarc, .Logoyamato{
     z-index: -1;
@@ -140,7 +158,7 @@ body{
 
 .dropcontainer{
     display: flex;
-    height: 33%;
+    height: 50%;
 }
 
 
@@ -162,10 +180,11 @@ body{
     .container:hover .Logomarchand, 
     .container:hover .Logoyamato, 
     .container:hover .Logomarc, 
-    .container:hover .Logoekes, 
-    .container:hover .Drop,
-    .Drop:hover{
+    .container:hover .Logoekes{
         height: 190px; 
+    }
+    .container:hover .Drop, .Drop:hover{
+        height: 125px; 
     }
     .dropcontainer:hover{
         background-color: rgba(0, 0, 0, 0.151);
@@ -178,10 +197,12 @@ body{
 
 @keyframes link-load{
     from{
+        visibility: visible;
         transform: translateY(-200%);
         opacity: 0;
     }
     to{
+        visibility: visible;
         transform: translateY(0%);
         opacity: 1;
     }
